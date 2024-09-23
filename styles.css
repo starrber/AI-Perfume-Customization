@@ -43,11 +43,21 @@ form label {
     margin-bottom: 10px;
 }
 
-form textarea {
+form select, form textarea {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+#result {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #dff0d8;
+    border-radius: 5px;
+    text-align: center;
 }
 
 footer {

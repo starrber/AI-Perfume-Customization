@@ -9,10 +9,42 @@
 <body>
     <h2>描述你的香水体验</h2>
     <form id="perfumeForm">
-        <label for="description">香水描述:</label>
+        <label for="occasion">适用场合:</label>
+        <select id="occasion" name="occasion">
+            <option value="">请选择</option>
+            <option value="约会">约会</option>
+            <option value="日常">日常</option>
+            <option value="工作">工作</option>
+            <option value="派对">派对</option>
+            <option value="特殊场合">特殊场合</option>
+        </select>
+
+        <label for="mood">心情描述:</label>
+        <select id="mood" name="mood">
+            <option value="">请选择</option>
+            <option value="快乐">快乐</option>
+            <option value="浪漫">浪漫</option>
+            <option value="平静">平静</option>
+            <option value="激情">激情</option>
+            <option value="神秘">神秘</option>
+        </select>
+
+        <label for="scentPreference">香味偏好:</label>
+        <select id="scentPreference" name="scentPreference">
+            <option value="">请选择</option>
+            <option value="清新">清新</option>
+            <option value="甜美">甜美</option>
+            <option value="温暖">温暖</option>
+            <option value="木质">木质</option>
+            <option value="东方">东方</option>
+        </select>
+
+        <label for="description">其他描述:</label>
         <textarea id="description" name="description" rows="4" cols="50" placeholder="描述你希望的香水体验..."></textarea>
+
         <button type="submit">提交</button>
     </form>
+    <div id="result"></div>
     <footer>
         <p>&copy; 2024 AI定制香水. All rights reserved.</p>
     </footer>
